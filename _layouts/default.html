@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <title>rGunti Wiki</title>
+    <title>
+        {% if page.title %}
+            {{ page.title }} -
+        {% endif %}
+        rGunti Wiki
+    </title>
 </head>
 <body>
     <header>
@@ -22,16 +27,18 @@
                 <b>rGunti Wiki</b>
             </span></li>
             <li><a href="/">Home</a></li>
-            <li><a href="/category">Categories</a></li>
-            <li><a href="/tags">Tags</a></li>
             <li class="dropdown">
-                <a href="#" class="dropdown-btn">Dropdown</a>
+                <a href="/category" class="dropdown-btn">Categories</a>
                 <div class="dropdown-content">
-                    <a href="#">Item 1</a>
-                    <a href="#">Item 2</a>
-                    <a href="#">Item 3</a>
+                    {% assign sorted_categories = (site.categories | sort: 0) %}
+                    {% for tag in sorted_categories %}
+                    <a href="{{ site.baseurl }}/category#{{ tag[0] | slugify }}">
+                        {{ tag[0] }}
+                    </a>
+                    {% endfor %}
                 </div>
-            </li>
+            </li class="dropdown">
+            <li><a href="/tags">Tags</a></li>
         </ul>
     </nav>
     <article>
@@ -40,7 +47,7 @@
     <footer>
         <ul class="hlinks">
             <li>
-                <span>Copyright &COPY; 2020, rGunti</span>
+                <span><b>Copyright &COPY; 2020, rGunti</b></span>
             </li>
             <li><a href="/legal/imprint">Imprint</a></li>
             <li><a href="/legal/privacy-policy">Privacy Policy</a></li>
