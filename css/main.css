@@ -42,7 +42,7 @@ article .date {
 .listing .post h2 {
     margin: 2px 0;
 }
-.listing .post .tags>span {
+.listing .post .tags>a {
     border: 1px solid black;
     border-radius: 10px;
     padding: 0 10px;

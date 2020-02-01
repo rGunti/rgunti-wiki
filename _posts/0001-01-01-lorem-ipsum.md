@@ -2,6 +2,7 @@
 layout: post
 title: Lorem Ipsum
 summary: Error quasi iusto ipsam consequatur adipisci nisi fuga. Sit consequuntur aspernatur sunt omnis dolorem et libero. Sint aut sapiente dolores aperiam dolorem corrupti quibusdam aut. Quod veritatis ut in sapiente quia amet. Dignissimos ullam exercitationem maiores earum magni.
+category: Sample Posts
 tags:
     - Test Post
     - Lorem Ipsum
