@@ -1,5 +1,11 @@
 /* General Setup */
 html, body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+header,
+article {
     margin: auto;
     max-width: 800px;
 }
@@ -8,14 +14,20 @@ html, body {
 header {
     text-align: center;
 }
+header h3 small {
+    font-size: x-small;
+}
 
 /* Navigation */
 nav {
+    position: sticky;
+    top: 0;
 }
 
 /* Article */
 article {
     padding: 0 5px;
+    margin-bottom: 50px;
 }
 article .date {
     font-style: italic;
@@ -38,7 +50,9 @@ article .date {
 
 /* Footer */
 footer {
-    margin-bottom: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Horizontal Link List */
