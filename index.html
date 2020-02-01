@@ -18,7 +18,7 @@ layout: default
         in
         <a href="{{ site.baseurl }}/category#{{ post.category | slugify }}">{{ post.category }}</a>
       </p>
-      <h2><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h2>
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
       <p class="post-summary">{{ post.summary }}</p>
       {% if post.tags %}
         <p class="tags">
