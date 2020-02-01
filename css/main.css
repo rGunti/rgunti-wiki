@@ -1,0 +1,89 @@
+/* General Setup */
+html, body {
+    margin: auto;
+    max-width: 800px;
+}
+
+/* Header */
+header {
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+}
+
+/* Article */
+article {
+    padding: 0 5px;
+}
+article .date {
+    font-style: italic;
+}
+
+/* Article Listing */
+.listing .post {
+    margin: 10px 0;
+}
+.listing .post .date,
+.listing .post .post-summary,
+.listing .post h2 {
+    margin: 2px 0;
+}
+.listing .post .tags>span {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+/* Footer */
+footer {
+    margin-bottom: 10px;
+}
+
+/* Horizontal Link List */
+ul.hlinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dddddd;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+ul.hlinks li {
+    float: left;
+}
+ul.hlinks li a,
+ul.hlinks li span {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: black;
+}
+ul.hlinks li a:hover,
+ul.hlinks .dropdown-content a:hover {
+    background-color: coral;
+}
+ul.hlinks li.dropdown {
+    display: inline-block;
+}
+ul.hlinks .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 1px solid black;
+    z-index: 1;
+}
+ul.hlinks .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+ul.hlinks .dropdown:hover .dropdown-content {
+    display: block;
+}
