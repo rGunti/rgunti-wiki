@@ -41,6 +41,11 @@ article {
 article .date {
     font-style: italic;
 }
+article pre {
+    background-color: lightgray;
+    border: 1px solid gray;
+    padding: 5px;
+}
 
 /* Article Listing */
 .listing .post {
